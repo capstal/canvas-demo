@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ol,li{
+    list-style: none;
+}
+body{
+    overflow: hidden;
+}
+#paint{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+button{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.active{
+    color: red;
+}
+.actions{
+    position: fixed;
+    top: 0;
+    left: 5px;
+}
+.actions span{
+    padding: 0 10px;
+}
+.actions .iconfont{
+    font-size: 20px;
+}
+
+.actions .iconfont.active{
+    font-size: 24px;
+}
+.colors {
+    position: fixed;
+    top: 24px;
+    left: 4px;
+    border-radius: 50%;
+}
+.colors li{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid#ccc;
+}
+
+.colors li.black{
+    background: black;
+}
+.colors li.red{
+    background: red;
+}
+.colors li.green{
+    background: green;
+}
+.colors li.active{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
